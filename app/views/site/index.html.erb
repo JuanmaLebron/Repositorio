@@ -1,0 +1,27 @@
+<h1>Latest Boomarks</h1>
+
+<table style="width: 100%">
+
+  <thead>
+      
+		<h3><%= link_to 'Crear Boomarks', bookmarks_path %></h3>
+	
+
+   </thead>
+   
+   <tbody>
+   
+   <% @bookmarks.each do |bookmark| %>
+   
+      <tr>
+	    
+		<td><%= link_to bookmark.title, bookmark.url %></td>
+		
+		
+	  </tr>
+	  
+   <% end%>
+   
+   </tbody>
+   
+</table>
